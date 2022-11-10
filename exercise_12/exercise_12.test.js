@@ -4,7 +4,7 @@ const pool = require('../lib/utils/pool');
 describe('exercise 12', () => {
   afterAll(() => pool.end());
 
-  it.skip('find the top 10 cities with the most total rental payment amount', async () => {
+  it('find the top 10 cities with the most total rental payment amount', async () => {
     const { rows } = await pool.query(
       fs.readFileSync(`${__dirname}/exercise_12.sql`, 'utf-8')
     );

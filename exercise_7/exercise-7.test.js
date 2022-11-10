@@ -4,7 +4,7 @@ const pool = require('../lib/utils/pool');
 describe('exercise 7', () => {
   afterAll(() => pool.end());
 
-  it.skip('find all film titles rented out by customers who live in the city of Dundee', async () => {
+  it('find all film titles rented out by customers who live in the city of Dundee', async () => {
     const { rows } = await pool.query(
       fs.readFileSync(`${__dirname}/exercise-7.sql`, 'utf-8')
     );

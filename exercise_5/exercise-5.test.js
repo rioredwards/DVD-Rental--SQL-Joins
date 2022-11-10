@@ -4,7 +4,7 @@ const pool = require('../lib/utils/pool');
 describe('exercise 5', () => {
   afterAll(() => pool.end());
 
-  it.skip('find all film titles that an actor with the last_name Davis appears in', async () => {
+  it('find all film titles that an actor with the last_name Davis appears in', async () => {
     const { rows } = await pool.query(
       fs.readFileSync(`${__dirname}/exercise-5.sql`, 'utf-8')
     );
