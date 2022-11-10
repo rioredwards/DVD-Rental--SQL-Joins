@@ -12,4 +12,3 @@ GROUP BY
     city.city
 ORDER BY SUM(payment.amount) DESC
 LIMIT 10
-
